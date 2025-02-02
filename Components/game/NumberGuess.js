@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet} from "react-native";
+import {View, Text, StyleSheet, Dimensions } from "react-native";
 import Color from "../../consts/Colors";
 
 
@@ -11,21 +11,22 @@ function NumberGuess({children}) {
 }
 
 export default NumberGuess;
+const deviceWidth = Dimensions.get("window").width;
 
 const styles = StyleSheet.create({
     container: {
         borderWidth: 4,
         color: Color.primary800,
-        padding: 24,
+        padding: deviceWidth < 380 ? 12 : 20,
         borderRadius: 8,
-        margin: 24,
+        margin: deviceWidth < 380 ? 12 : 24,
         alignItems: "center",
         justifyContent: "center",
         borderColor: Color.primary800,
     },
 
     numberText: {
-        fontSize: 36,
+        fontSize: deviceWidth < 380 ? 28 : 36,
         color: Color.primary800,
         fontWeight: "bold",
     }

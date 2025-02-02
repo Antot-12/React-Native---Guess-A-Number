@@ -70,11 +70,14 @@ export default function App() {
 
 
     return (
-        <LinearGradient colors={[Colors.primary700, Colors.primary800]} style={styles.screenColor}>
-            <ImageBackground source={require('./assets/dices.jpg')} resizeMode="cover" style={styles.screenColor} imageStyle={styles.backgroudImage}>
-                <SafeAreaView style={styles.screenColor}>{screen}</SafeAreaView>
-            </ImageBackground>
-        </LinearGradient>
+        <>
+            <StatusBar style='dark'/>
+            <LinearGradient colors={[Colors.primary700, Colors.primary800]} style={styles.screenColor}>
+                <ImageBackground source={require('./assets/dices.jpg')} resizeMode="cover" style={styles.screenColor} imageStyle={styles.backgroudImage}>
+                    <SafeAreaView style={styles.screenColor}>{screen}</SafeAreaView>
+                </ImageBackground>
+            </LinearGradient>
+        </>
     );
 }
 
