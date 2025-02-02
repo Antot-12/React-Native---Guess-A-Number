@@ -63,7 +63,7 @@ Here are some screenshots of the app in action:
 - [x] 🔢 **Guess Number Logic**
 - [x] 🌌 **Background Styling with Images**
 - [x] 📊 **Game Stats Screen**
-- [ ] 🔄 **Full Landscape Orientation Support**
-- [ ] 🖼️ **Component Scaling for Large Screens**
-- [ ] 📱 **Tablet Compatibility**
+- [x] 🔄 **Full Landscape Orientation Support**
+- [x] 🖼️ **Component Scaling for Large Screens**
+- [x] 📱 **Tablet Compatibility**
 - [ ] 🌍 **Multilingual Support**
